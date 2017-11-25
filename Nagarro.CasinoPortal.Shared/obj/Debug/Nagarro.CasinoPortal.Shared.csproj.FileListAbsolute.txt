@@ -1,0 +1,4 @@
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Shared\bin\Debug\Nagarro.CasinoPortal.Shared.dll
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Shared\bin\Debug\Nagarro.CasinoPortal.Shared.pdb
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Shared\obj\Debug\Nagarro.CasinoPortal.Shared.dll
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Shared\obj\Debug\Nagarro.CasinoPortal.Shared.pdb

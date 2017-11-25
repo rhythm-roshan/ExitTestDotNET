@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Presentation", "1. Presentation", "{3618A4F0-370B-4A5C-887A-E7B25D3D6347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Business", "3. Business", "{ABDB0A3C-EEFC-4412-A743-514957616D2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Data", "4. Data", "{FBE52726-A5A8-4325-8CF9-E8806E50B63B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Shared", "5. Shared", "{2F55307B-1882-416A-9C7B-8BDCD301D8A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.EntityData", "Nagarro.EntityData\Nagarro.CasinoPortal.EntityData.csproj", "{9A33211C-A08B-48F8-96EF-C3C76A16EFCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Web API", "2. Web API", "{F5D4822F-622F-47A0-9818-829F62959B74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.DTOModel", "Nagarro.CasinoPortal.DTOModel\Nagarro.CasinoPortal.DTOModel.csproj", "{D7FA799E-F56E-45B5-B715-3A7AABCF6BF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.Shared", "Nagarro.CasinoPortal.Shared\Nagarro.CasinoPortal.Shared.csproj", "{39A6F20F-8726-41F4-921E-D8336BD0EDDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.Data", "Nagarro.CasinoPortal.Data\Nagarro.CasinoPortal.Data.csproj", "{175C582A-DAA8-419F-9B74-96C7FF17A99A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.Business", "Nagarro.CasinoPortal.Business\Nagarro.CasinoPortal.Business.csproj", "{1B2908AD-56A9-4D77-8A96-5381B558B385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.Api", "Nagarro.CasinoPortal.Api\Nagarro.CasinoPortal.Api.csproj", "{9FE3F83E-0984-4033-AD41-32403B7DAE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.Web.Shared", "..\..\..\..\Downloads\MVC\MVC\Day1\Framework\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal\Nagarro.EmployeePortal.Web.Shared\Nagarro.CasinoPortal.Web.Shared.csproj", "{340463B8-393E-4E7E-960D-E7CF1EFD846A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nagarro.CasinoPortal.Admin", "Nagarro.CasinoPortal.Admin\Nagarro.CasinoPortal.Admin.csproj", "{30AD3DAA-7837-447F-9D9D-22DF2F2CE52A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A33211C-A08B-48F8-96EF-C3C76A16EFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A33211C-A08B-48F8-96EF-C3C76A16EFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A33211C-A08B-48F8-96EF-C3C76A16EFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A33211C-A08B-48F8-96EF-C3C76A16EFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FA799E-F56E-45B5-B715-3A7AABCF6BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FA799E-F56E-45B5-B715-3A7AABCF6BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FA799E-F56E-45B5-B715-3A7AABCF6BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FA799E-F56E-45B5-B715-3A7AABCF6BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A6F20F-8726-41F4-921E-D8336BD0EDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A6F20F-8726-41F4-921E-D8336BD0EDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A6F20F-8726-41F4-921E-D8336BD0EDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A6F20F-8726-41F4-921E-D8336BD0EDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175C582A-DAA8-419F-9B74-96C7FF17A99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175C582A-DAA8-419F-9B74-96C7FF17A99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175C582A-DAA8-419F-9B74-96C7FF17A99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175C582A-DAA8-419F-9B74-96C7FF17A99A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2908AD-56A9-4D77-8A96-5381B558B385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2908AD-56A9-4D77-8A96-5381B558B385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2908AD-56A9-4D77-8A96-5381B558B385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2908AD-56A9-4D77-8A96-5381B558B385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE3F83E-0984-4033-AD41-32403B7DAE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE3F83E-0984-4033-AD41-32403B7DAE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE3F83E-0984-4033-AD41-32403B7DAE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE3F83E-0984-4033-AD41-32403B7DAE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340463B8-393E-4E7E-960D-E7CF1EFD846A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340463B8-393E-4E7E-960D-E7CF1EFD846A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340463B8-393E-4E7E-960D-E7CF1EFD846A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340463B8-393E-4E7E-960D-E7CF1EFD846A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30AD3DAA-7837-447F-9D9D-22DF2F2CE52A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30AD3DAA-7837-447F-9D9D-22DF2F2CE52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30AD3DAA-7837-447F-9D9D-22DF2F2CE52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30AD3DAA-7837-447F-9D9D-22DF2F2CE52A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A33211C-A08B-48F8-96EF-C3C76A16EFCF} = {FBE52726-A5A8-4325-8CF9-E8806E50B63B}
+		{D7FA799E-F56E-45B5-B715-3A7AABCF6BF1} = {2F55307B-1882-416A-9C7B-8BDCD301D8A4}
+		{39A6F20F-8726-41F4-921E-D8336BD0EDDB} = {2F55307B-1882-416A-9C7B-8BDCD301D8A4}
+		{175C582A-DAA8-419F-9B74-96C7FF17A99A} = {FBE52726-A5A8-4325-8CF9-E8806E50B63B}
+		{1B2908AD-56A9-4D77-8A96-5381B558B385} = {ABDB0A3C-EEFC-4412-A743-514957616D2C}
+		{9FE3F83E-0984-4033-AD41-32403B7DAE8D} = {F5D4822F-622F-47A0-9818-829F62959B74}
+		{340463B8-393E-4E7E-960D-E7CF1EFD846A} = {2F55307B-1882-416A-9C7B-8BDCD301D8A4}
+		{30AD3DAA-7837-447F-9D9D-22DF2F2CE52A} = {3618A4F0-370B-4A5C-887A-E7B25D3D6347}
+	EndGlobalSection
+EndGlobal

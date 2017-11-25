@@ -1,0 +1,12 @@
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\Nagarro.EntityData.dll.config
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\Nagarro.EntityData.dll
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\Nagarro.EntityData.pdb
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\EntityFramework.dll
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\Nagarro.CasinoPortal.Shared.dll
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\Nagarro.CasinoPortal.Shared.pdb
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\EntityFramework.xml
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\obj\Debug\Nagarro.CasinoPortal.EntityData.csprojResolveAssemblyReference.cache
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\obj\Debug\Nagarro.EntityData.dll
+C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.EntityData\obj\Debug\Nagarro.EntityData.pdb

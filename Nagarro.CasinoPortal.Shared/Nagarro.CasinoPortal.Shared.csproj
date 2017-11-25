@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39A6F20F-8726-41F4-921E-D8336BD0EDDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nagarro.CasinoPortal.Shared</RootNamespace>
+    <AssemblyName>Nagarro.CasinoPortal.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functional\BusinessDomainComponents\IUserBDC.cs" />
+    <Compile Include="Functional\DataAccessComponents\IUserDAC.cs" />
+    <Compile Include="Functional\DataTransferObjects\IUserDTO.cs" />
+    <Compile Include="Infrastructure\Business\BDCBase.cs" />
+    <Compile Include="Infrastructure\Business\BDCFactory.cs" />
+    <Compile Include="Infrastructure\Business\IBDCFactory.cs" />
+    <Compile Include="Infrastructure\Business\IBusinessDomainComponent.cs" />
+    <Compile Include="Infrastructure\Common\CommonAttributes\DisplayTextKeyAttribute.cs" />
+    <Compile Include="Infrastructure\Common\CommonAttributes\EntityPropertyMappingAttribute.cs" />
+    <Compile Include="Infrastructure\Common\CommonAttributes\QualifiedTypeNameAttribute.cs" />
+    <Compile Include="Infrastructure\Common\CommonAttributes\ViewModelPropertyMappingAttribute.cs" />
+    <Compile Include="Infrastructure\Common\Constants\AppConstants.cs" />
+    <Compile Include="Infrastructure\Common\Constants\SuppressMessageConstants.cs" />
+    <Compile Include="Infrastructure\Common\EntityModel\CustomAttributes\EntityMappingAttribute.cs" />
+    <Compile Include="Infrastructure\Common\EntityModel\Enums\MappingDirectionType.cs" />
+    <Compile Include="Infrastructure\Common\EntityModel\Enums\MappingType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\BDCType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\DACType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\DTOType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\ObjectStateType.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionalHandling\Base\ExceptionBase.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionalHandling\CustomExceptionHandling\AttributeNotDefinedException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionalHandling\CustomExceptionHandling\BDCException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionalHandling\CustomExceptionHandling\DACException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionalHandling\CustomExceptionHandling\FactoryException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionalHandling\CustomExceptionHandling\NotificationException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionalHandling\ExceptionManager.cs" />
+    <Compile Include="Infrastructure\Common\Factory\FactoryBase.cs" />
+    <Compile Include="Infrastructure\Common\OperationResult\OperationResult.cs" />
+    <Compile Include="Infrastructure\Common\OperationResult\OperationResultType.cs" />
+    <Compile Include="Infrastructure\Common\Utilities\EnumAttributeUtility.cs" />
+    <Compile Include="Infrastructure\Common\Utilities\ResourceUtility.cs" />
+    <Compile Include="Infrastructure\Common\Utilities\ValidatorUtility.cs" />
+    <Compile Include="Infrastructure\Common\Validation\CasinoPortalValidationFailure.cs" />
+    <Compile Include="Infrastructure\Common\Validation\CasinoPortalValidationResult.cs" />
+    <Compile Include="Infrastructure\DAC\DACBase.cs" />
+    <Compile Include="Infrastructure\DAC\DACFactory.cs" />
+    <Compile Include="Infrastructure\DAC\IDACFactory.cs" />
+    <Compile Include="Infrastructure\DAC\IDataAccessComponent.cs" />
+    <Compile Include="Infrastructure\DTO\CommonAttributes\ViewModelMappingAttribute.cs" />
+    <Compile Include="Infrastructure\DTO\DTOBase.cs" />
+    <Compile Include="Infrastructure\DTO\DTOFactory.cs" />
+    <Compile Include="Infrastructure\DTO\IDTO.cs" />
+    <Compile Include="Infrastructure\DTO\IDTOFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)OutputBin\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
