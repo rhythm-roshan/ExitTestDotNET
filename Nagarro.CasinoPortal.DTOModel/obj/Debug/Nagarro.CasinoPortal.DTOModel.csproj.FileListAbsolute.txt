@@ -1,7 +1,0 @@
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.DTOModel\bin\Debug\Nagarro.CasinoPortal.DTOModel.dll
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.DTOModel\bin\Debug\Nagarro.CasinoPortal.DTOModel.pdb
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.DTOModel\bin\Debug\Nagarro.CasinoPortal.Shared.dll
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.DTOModel\bin\Debug\Nagarro.CasinoPortal.Shared.pdb
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.DTOModel\obj\Debug\Nagarro.CasinoPortal.DTOModel.csprojResolveAssemblyReference.cache
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.DTOModel\obj\Debug\Nagarro.CasinoPortal.DTOModel.dll
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.DTOModel\obj\Debug\Nagarro.CasinoPortal.DTOModel.pdb

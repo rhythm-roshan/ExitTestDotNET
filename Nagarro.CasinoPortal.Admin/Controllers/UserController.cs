@@ -46,56 +46,115 @@ namespace Nagarro.CasinoPortal.Admin.Controllers
         [HttpPost]
         public ActionResult RegisterUser(UserViewModel user)
         {
-            if (user.file != null)
+
+            if (ModelState.IsValid)
             {
-                AddImage(user.file);
-                Byte[] bt = Encoding.UTF8.GetBytes(user.file.FileName);
-                user.image = bt;
-                user.file = null;
+
+                if (string.IsNullOrEmpty(user.UserName))
+                {
+
+                }
+
+
+
+
+
+                if (user.file != null)
+                {
+                    AddImage(user.file);
+                    Byte[] bt = Encoding.UTF8.GetBytes(user.file.FileName);
+                    user.image = bt;
+                    user.file = null;
+
+                }
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("http://localhost:56636/api/");
+
+                    //HTTP POST
+                    var postTask = client.PostAsJsonAsync<UserViewModel>("admin", user);
+                    postTask.Wait();
+
+                    var result = postTask.Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        var readTask = result.Content.ReadAsAsync<UserViewModel>();
+                        readTask.Wait();
+                        user = readTask.Result;
+                        return RedirectToAction("GetAllUser");
+                    }
+                }
+
+                ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+
 
             }
+            return View(user);
+        }
 
+
+        [HttpPost]
+        public ActionResult Delete(UserViewModel user)
+        {
+
+           
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("http://localhost:56636/api/");
 
-                //HTTP POST
-                var postTask = client.PostAsJsonAsync<UserViewModel>("admin", user);
-                postTask.Wait();
-
-                var result = postTask.Result;
+                var responseTask = client.GetAsync("admin/0?UniqueID=" + user.UniqueUserId);
+                responseTask.Wait();
+                var result = responseTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
+                    var readTask = result.Content.ReadAsAsync<UserViewModel>();
+                    readTask.Wait();
+                    user = readTask.Result;
 
-                    return RedirectToAction("Index");
                 }
+
             }
 
-            ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
 
+            using (var client = new HttpClient())
+        {
+            client.BaseAddress = new Uri("http://localhost:56636/api/");
 
+            //HTTP DELETE
+            var deleteTask = client.DeleteAsync("admin/" + user.UserID.ToString());
+            deleteTask.Wait();
 
-            return View(user);
+            var result = deleteTask.Result;
+            if (result.IsSuccessStatusCode)
+            {
+
+                return RedirectToAction("GetAllUser");
+            }
         }
 
+
+            return View();
+        
+        }
         [HttpPost]
         public ActionResult RechargeAmount(UserViewModel user)
         {
-
+       
 
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("http://localhost:56636/api/admin");
 
                 //HTTP POST
-                var putTask = client.PutAsJsonAsync<UserViewModel>("admin/"+user.UserID.ToString(), user);
+                var putTask = client.PutAsJsonAsync<UserViewModel>("admin/"+user.UserID, user);
                 putTask.Wait();
 
                 var result = putTask.Result;
                 if (result.IsSuccessStatusCode)
                 {
 
-                    return RedirectToAction("GetALlUser");
+                    return RedirectToAction("GetAllUser");
                 }
             }
             return View(user);

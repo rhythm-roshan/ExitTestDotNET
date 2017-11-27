@@ -88,7 +88,7 @@ namespace Nagarro.CasinoPortal.Api.Controllers
             OperationResult<IUserDTO> val = userBDC.CreateUser(userDTO);
             if (val.IsValid())
             {
-                return Ok(val.Data.UserID);
+                return Ok(val.Data);
             }
 
             return NotFound();

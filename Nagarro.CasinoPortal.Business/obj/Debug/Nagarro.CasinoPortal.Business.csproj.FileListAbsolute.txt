@@ -1,7 +1,0 @@
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Business\bin\Debug\Nagarro.CasinoPortal.Business.dll
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Business\bin\Debug\Nagarro.CasinoPortal.Business.pdb
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Business\bin\Debug\Nagarro.CasinoPortal.Shared.dll
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Business\bin\Debug\Nagarro.CasinoPortal.Shared.pdb
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Business\obj\Debug\Nagarro.CasinoPortal.Business.csprojResolveAssemblyReference.cache
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Business\obj\Debug\Nagarro.CasinoPortal.Business.dll
-C:\Users\rhythmraj\documents\visual studio 2013\Projects\CasinoPortal\Nagarro.CasinoPortal.Business\obj\Debug\Nagarro.CasinoPortal.Business.pdb
